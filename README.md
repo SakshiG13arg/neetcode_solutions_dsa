@@ -8,3 +8,4 @@ This repository contains my solutions to NeetCode problems.
 - Two Pointers
 - Sliding Window
 - Stack
+- Binary Search
