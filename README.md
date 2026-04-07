@@ -9,3 +9,4 @@ This repository contains my solutions to NeetCode problems.
 - Sliding Window
 - Stack
 - Binary Search
+- Greedy
