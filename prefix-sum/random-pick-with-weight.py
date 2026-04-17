@@ -1,16 +1,21 @@
 class Solution:
 
     def __init__(self, w: List[int]):
-        self.w = w
-        self.total = sum(w)
+        self.prefix = [0]
+        for weight in w:
+            self.prefix.append(self.prefix[-1] + weight)
 
     def pickIndex(self) -> int:
-        target = self.total * random.random()
-        curSum = 0
-        for i in range(len(self.w)):
-            curSum += self.w[i]
-            if curSum > target:
-                return i
+        target = self.prefix[-1] * random.random()
+        l = 1
+        r = len(self.prefix)
+        while l < r:
+            mid = (l + r) // 2
+            if self.prefix[mid] <= target:
+                l = mid + 1
+            else:
+                r = mid
+        return l - 1
 
 
 # Your Solution object will be instantiated and called as such:
