@@ -10,3 +10,5 @@ This repository contains my solutions to NeetCode problems.
 - Stack
 - Binary Search
 - Greedy
+- Prefix Sum
+- Breadth First Search
