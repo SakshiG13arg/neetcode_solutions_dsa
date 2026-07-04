@@ -12,3 +12,6 @@ This repository contains my solutions to NeetCode problems.
 - Greedy
 - Prefix Sum
 - Breadth First Search
+- Depth First Search
+- Dynamic Programming
+- Heap Or Priority Queue
